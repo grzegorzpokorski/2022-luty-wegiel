@@ -1,0 +1,12 @@
+.footer{
+	&__social{
+		&__link{
+			color: $gray;
+			transition: all .35s;
+
+			&:hover{
+				color: $orange !important;
+			}
+		}
+	}
+}

@@ -11392,6 +11392,12 @@ readers do not read off random characters that represent icons */
   font-size: 1.5rem;
   line-height: 4rem; }
 
+.footer__social__link {
+  color: #222222;
+  transition: all .35s; }
+  .footer__social__link:hover {
+    color: #ff7517 !important; }
+
 p:last-child {
   margin-bottom: 0; }
 
