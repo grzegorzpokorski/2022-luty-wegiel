@@ -1,3 +1,12 @@
 @import './bootstrap/bootstrap';
 @import './fontawesome';
 @import './font';
+
+@import './modules/section';
+@import './modules/features';
+
+p{
+	&:last-child{
+		margin-bottom: 0;
+	}
+}

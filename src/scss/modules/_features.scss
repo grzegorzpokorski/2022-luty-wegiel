@@ -1,0 +1,12 @@
+.features{
+	&__icon-box{
+		height: 4rem;
+		min-width: 4rem;
+		text-align: center;
+	}
+
+	&__icon{
+		font-size: $font-size-base * 1.5;
+		line-height: 4rem;
+	}
+}

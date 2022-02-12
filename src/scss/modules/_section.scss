@@ -1,0 +1,22 @@
+.section{
+	&__title{
+		position: relative;
+		margin-bottom: calc(.5em * 2 - .375rem);
+
+		&::after{
+			content: '';
+			position: absolute;
+			bottom: calc(-.5em);
+			width: $spacer * 3;
+			height: .375rem;
+			background-color: $orange;
+		}
+
+		&--center{
+			&::after{
+				left: 50%;
+				transform: translateX(-50%);
+			}
+		}
+	}
+}
