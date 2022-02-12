@@ -185,8 +185,8 @@ $dropdown-padding-x:                0;
 $dropdown-padding-y:                .5rem;
 $dropdown-spacer:                   .125rem;
 $dropdown-font-size:                $font-size-base;
-$dropdown-color:                    $body-color;
-$dropdown-bg:                       $white;
+$dropdown-color:                    $white;
+$dropdown-bg:                       $gray;
 $dropdown-border-color:             rgba($orange, .15);
 $dropdown-border-radius:            none;
 // $dropdown-border-width:             $border-width;
@@ -195,8 +195,8 @@ $dropdown-border-radius:            none;
 $dropdown-divider-margin-y:         $spacer * .5;
 // $dropdown-box-shadow:               $box-shadow;
 
-// $dropdown-link-color:               $gray-900;
-// $dropdown-link-hover-color:         shade-color($dropdown-link-color, 10%);
+$dropdown-link-color:               rgba($white, .5);
+$dropdown-link-hover-color:         rgba($white, 1);
 $dropdown-link-hover-bg:            rgba($orange, .3);
 
 $dropdown-link-active-color:        $white-dark;
