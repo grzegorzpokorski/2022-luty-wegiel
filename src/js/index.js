@@ -8,5 +8,6 @@ var slider = tns({
 	items: 1,
 	slideBy: 'page',
 	navPosition: 'bottom',
-	prevButton: '.prev',
+	mouseDrag: true,
+	autoHeight: true,
 });
