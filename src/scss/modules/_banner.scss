@@ -1,0 +1,21 @@
+.banner{
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	&--orange{
+		position: relative;
+
+		&:after{
+			content: '';
+			position: absolute;
+			inset: 0;
+			background-color: rgba($orange, .85);
+			z-index: 1;
+		}
+	}
+
+	&__content{
+		z-index: 2;
+	}
+}

@@ -5,7 +5,11 @@
 @import './modules/section';
 @import './modules/features';
 @import './modules/footer';
+@import './modules/banner';
 @import './modules/carousel';
+
+@import './../../node_modules/tiny-slider/src/tiny-slider';
+@import './modules/testimonials-slider';
 
 p{
 	&:last-child{
