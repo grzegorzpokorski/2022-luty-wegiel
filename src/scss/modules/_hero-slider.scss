@@ -1,0 +1,74 @@
+.hero{
+	position: relative;
+
+	& .tns-nav{
+		position: absolute;
+		z-index: 2;
+		bottom: 1rem;
+		left: 50%;
+		transform: translateX(-50%);
+		
+		& button{
+			background-color: rgba($white, .85);
+
+			&.tns-nav-active{
+				background-color: rgba($orange, .85);
+			}
+		}
+	}
+
+	&-slider{
+
+		&__item{
+			background-size: cover;
+			background-position: center center;
+			background-repeat: no-repeat;
+			min-height: 28.5rem;
+			height: 80vh;
+			position: relative;
+
+			&:after{
+				content: '';
+				position: absolute;
+				inset: 0;
+				background-color: rgba($black, .15);
+				z-index: 1;
+			}
+		}
+
+		&__inner{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 100%;
+			padding-left: $grid-gutter-width / 2;
+			padding-right: $grid-gutter-width / 2;
+			z-index: 2;
+
+			@each $name, $size in $container-max-widths{
+				@include media-breakpoint-up($name){
+					max-width: map-get($container-max-widths, #{$name});
+				}
+			}
+		}
+
+		&__half{
+			display: block;
+
+			@include media-breakpoint-up(md){
+				width: 50%;
+			}			
+		}
+
+		&__controls{
+			position: absolute;
+			top: 50%;
+			left: 1rem;
+			right: 1rem;
+			transform: translateY(-50%);
+			z-index: 2;
+		}
+	}
+}
+
