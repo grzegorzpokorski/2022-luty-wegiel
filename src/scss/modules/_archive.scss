@@ -1,0 +1,50 @@
+.archive{
+
+	&__item{
+		flex-direction: row;
+
+		&:nth-child(even){
+			@include media-breakpoint-up(md){
+				flex-direction: row-reverse;
+			}
+		}
+	}
+
+	&__img-wrapper{
+		display: block;
+		position: relative;
+		overflow: hidden;
+		inset: 0;
+		height: auto;
+		width: 100%;
+		margin-bottom: 0;
+	}
+
+	&__img{
+		inset: 0;
+		width: 100%;
+		object-fit: cover;
+		transition: all .35s;
+
+		&:hover{
+			transform: scale(1.15) rotate(2.5deg);
+		}
+	}
+
+	&__time{
+		position: relative;
+
+		&:after{
+			content: '';
+			width: .25rem;
+			height: .25rem;
+			border-radius: 50%;
+			background-color: rgba($orange, .5);
+			position: absolute;
+			top: 50%;
+			right: -1.125rem;
+			transform: translateY(-50%);
+
+		}
+	}
+}

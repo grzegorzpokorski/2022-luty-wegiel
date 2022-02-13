@@ -11838,6 +11838,43 @@ readers do not read off random characters that represent icons */
     transform: translateY(-50%);
     z-index: 2; }
 
+.archive__item {
+  flex-direction: row; }
+  @media (min-width: 768px) {
+    .archive__item:nth-child(even) {
+      flex-direction: row-reverse; } }
+
+.archive__img-wrapper {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  inset: 0;
+  height: auto;
+  width: 100%;
+  margin-bottom: 0; }
+
+.archive__img {
+  inset: 0;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all .35s; }
+  .archive__img:hover {
+    transform: scale(1.15) rotate(2.5deg); }
+
+.archive__time {
+  position: relative; }
+  .archive__time:after {
+    content: '';
+    width: .25rem;
+    height: .25rem;
+    border-radius: 50%;
+    background-color: rgba(255, 117, 23, 0.5);
+    position: absolute;
+    top: 50%;
+    right: -1.125rem;
+    transform: translateY(-50%); }
+
 p:last-child {
   margin-bottom: 0; }
 
