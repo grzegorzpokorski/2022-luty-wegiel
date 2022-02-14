@@ -1,5 +1,5 @@
 import 'bootstrap';
-import { tns } from "./../../node_modules/tiny-slider/src/tiny-slider"
+import { tns } from "./../../node_modules/tiny-slider/src/tiny-slider";
 
 var slider = tns({
 	container: '.testimonials-slider',
@@ -21,8 +21,17 @@ var slider = tns({
 	navPosition: 'bottom',
 	mouseDrag: true,
 	autoHeight: true,
-	autoplay: true,
+	autoplay: false,
 	autoplayHoverPause: true,
 	autoplayButtonOutput: false,
 	speed: 700,
 });
+
+// import 'glightbox/dist/js/glightbox';
+// import GLightbox from 'glightbox';
+
+// var lightbox = GLightbox({
+//     touchNavigation: true,
+//     loop: true,
+//     autoplayVideos: true
+// });

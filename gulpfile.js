@@ -25,7 +25,7 @@ gulp.task('process-sass', () => {
 });
 
 gulp.task('process-js', () => {
-	return gulp.src('src/js/index.js')
+	return gulp.src('src/js/*.js')
 		.pipe(webpack({
 			mode: mode.development() ? 'development' : 'production',
 			watch: true,
@@ -33,7 +33,7 @@ gulp.task('process-js', () => {
 				filename: 'bundle.js'
 			}
 		}))
-		.pipe(babel({ presets: ['@babel/env'] }))
+		.pipe(babel({ presets: ['@babel/env'], compact: false }))
 		.pipe(mode.development(sourcemaps.init()))
 		.pipe(uglify().on('error', (uglify) => {
 			console.error(uglify.message);

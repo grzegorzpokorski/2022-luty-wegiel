@@ -1,0 +1,24 @@
+.gallery{
+	display: flex;
+	row-gap: 1.5rem;
+
+	&__inner{
+		display: block;
+		position: relative;
+		overflow: hidden;
+		inset: 0;
+		height: auto;
+		width: 100%;
+	}
+
+	&__image{
+		inset: 0;
+		width: 100%;
+		object-fit: cover;
+		transition: all .35s;
+
+		&:hover{
+			transform: scale(1.3);
+		}
+	}
+}

@@ -13,6 +13,9 @@
 @import './modules/hero-slider';
 @import './modules/archive';
 
+@import './../../node_modules/glightbox/dist/css/glightbox';
+@import './modules/gallery';
+
 p{
 	&:last-child{
 		margin-bottom: 0;
