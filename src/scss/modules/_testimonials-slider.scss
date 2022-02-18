@@ -22,7 +22,7 @@
 }
 
 .testimonials-slider{
-
+	
 	& .tns-nav{
 		display: flex;
 		flex-direction: row;
@@ -48,6 +48,23 @@
 		&:active{
 			color: rgba($orange, .85);
 			opacity: 1;
+		}
+	}
+
+	&__signature{
+		position: relative;
+		color: $gray;
+		display: inline-block;
+		
+		&:after{
+			content: '';
+			position: absolute;
+			left: -2.5em;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 2em;
+			height: .125em;
+			background-color: rgba($gray-light, .5);
 		}
 	}
 }
